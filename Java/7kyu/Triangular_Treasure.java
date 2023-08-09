@@ -15,7 +15,7 @@
 
 
 
-public class Triangular {
+public class Triangular_Treasure {
     public static long triangular(long n) {
 
         long totalStars = 0;
