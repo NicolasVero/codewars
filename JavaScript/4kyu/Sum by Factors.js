@@ -22,66 +22,63 @@
 
 
 function sumOfDivided(list) {
-  
-  if(list.length == 0) 
-    return [];
+  	
+	if(list.length == 0) 
+    	return [];
 
-  const primes = getPrime(list);
+  	const primes = getPrime(list);
     
-  let sorted_arr = [];
+  	let sorted_arr = [];
   
-  for(let i = 0; i < primes.length; i++) {
-    let result = 0;
-    for(let j = 0; j < list.length; j++) {
+  	for(let i = 0; i < primes.length; i++) {
+    	let result = 0;
+    	for(let j = 0; j < list.length; j++) {
 
-      if(list[j] % primes[i] === 0) {
-        result += list[j]
-      }
+      		if(list[j] % primes[i] === 0) {
+        		result += list[j]
+      		}
+    	}
+    	sorted_arr.push([primes[i], result])
+  	}
+  
+  	return sorted_arr;
+		
+		
+	function getPrime(numbers) {
+		var primes = generateAllPrimes(Math.max.apply(null, numbers.map(Math.abs)))
+		var result = []
+		
+		numbers.forEach((e) => {
+		for(let i = 0; i < primes.length; i++)            
+			if(e % primes[i] === 0)
+			result.push(primes[i]);
+		});
+		
+		return Array.from(new Set(result)).sort((a, b) => a - b)
+	}
+	
+	function generateAllPrimes(max) {
+		
+		const sieve = new Array(max + 1).fill(true);
+		
+		sieve[0] = false;
+		sieve[1] = false;
+
+		for (let p = 2; p * p <= max; p++) {
+			if (sieve[p] === true) {
+				for (let i = p * p; i <= max; i += p) {
+					sieve[i] = false;
+				}
+			}
+		}
+
+		const primes = [];
+		for (let i = 2; i <= max; i++) {
+			if (sieve[i] === true) {
+				primes.push(i);
+			}
+		}
+
+		return primes;
     }
-
-    sorted_arr.push([primes[i], result])
-  }
-  
-  return sorted_arr;
-    
-    
-  function getPrime(numbers) {
-    var primes = generateAllPrimes(Math.max.apply(null, numbers.map(Math.abs)))
-    var result = []
-    
-    numbers.forEach((e) => {
-      for(let i = 0; i < primes.length; i++)            
-        if(e % primes[i] === 0)
-          result.push(primes[i]);
-    });
-    
-    return Array.from(new Set(result)).sort((a, b) => a - b)
-  }
-  
-  function generateAllPrimes(max) {
-    
-    const sieve = new Array(max + 1).fill(true);
-    
-    sieve[0] = false;
-    sieve[1] = false;
-
-    for (let p = 2; p * p <= max; p++) {
-      if (sieve[p] === true) {
-        for (let i = p * p; i <= max; i += p) {
-          sieve[i] = false;
-        }
-      }
-    }
-
-    const primes = [];
-    for (let i = 2; i <= max; i++) {
-      if (sieve[i] === true) {
-        primes.push(i);
-      }
-    }
-
-    return primes;
-  }
-
-  
 }
