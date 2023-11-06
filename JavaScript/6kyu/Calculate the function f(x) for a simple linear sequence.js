@@ -14,22 +14,22 @@
 
 function getFunction(sequence) {
     function getCoefficient(sequence) {
-      const coefficient = Math.abs(sequence[1] - sequence[0]);
-      
-      for (let i = 1; i < sequence.length - 1; i++) {
-        if (Math.abs(sequence[i + 1] - sequence[i]) !== coefficient) {
-          return null;
-        }
-      }
-      
-      return (sequence[0] < sequence[sequence.length - 1]) ? coefficient : -coefficient;
+		const coefficient = Math.abs(sequence[1] - sequence[0]);
+		
+		for (let i = 1; i < sequence.length - 1; i++) {
+			if (Math.abs(sequence[i + 1] - sequence[i]) !== coefficient) {
+				return null;
+			}
+		}
+		
+		return (sequence[0] < sequence[sequence.length - 1]) ? coefficient : -coefficient;
     }
     
     function getCString(coefficient) {
-      if (coefficient === 1 ) return 'x';
-      if (coefficient === -1) return '-x';
-      if (coefficient !== 0 ) return `${coefficient}x`;
-      return '';
+		if (coefficient === 1 ) return 'x';
+		if (coefficient === -1) return '-x';
+		if (coefficient !== 0 ) return `${coefficient}x`;
+		return '';
     }
     
     let coefficient = getCoefficient(sequence);
