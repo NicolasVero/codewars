@@ -9,7 +9,7 @@
 // Courtesy of projecteuler.net (Problem 1)
 
 
-public class Solution {
+public class Multiples_of_3_or_5 {
   public int solution(int number) {
     
     int count = 0;
