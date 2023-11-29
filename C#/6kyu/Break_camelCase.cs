@@ -8,8 +8,8 @@
 
 using System;
 
-public class Kata {
-    public static string BreakCamelCase(string str) {
+public class Break_CamelCase {
+    public static string Break_CamelCase(string str) {
         string newString = "";
     
         for(int i = 0; i < str.Length; i++) 
