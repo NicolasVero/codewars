@@ -9,7 +9,7 @@
 // 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
 
-public class DRoot {
+public class Sum_of_Digits_Digital_Root {
     public static int digital_root(int n) {
         
         String s = String.valueOf(n);

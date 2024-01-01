@@ -7,7 +7,7 @@
 // "(( @"     =>  "))((" 
 
 
-public class DuplicateEncoder {
+public class Duplicate_Encoder {
 	static String encode(String word){
     
         word = word.toLowerCase();

@@ -7,7 +7,7 @@
 // spinWords( "This is another test" )=> returns "This is rehtona test"
 
 
-public class SpinWords {
+public class Stop_gninnipS_My_sdroW {
     
     public String spinWords(String sentence) {
     

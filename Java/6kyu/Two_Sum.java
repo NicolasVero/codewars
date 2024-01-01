@@ -9,10 +9,9 @@
 // two_sum([1, 2, 3], 4) == {0, 2}
 
 
-public class Solution
-{
-    public static int[] twoSum(int[] numbers, int target)
-    {
+public class Two_Sum {
+    public static int[] twoSum(int[] numbers, int target) {
+        
         for(int i = 0; i < numbers.length; i++)
             for(int j = 0; j < numbers.length; j++)
                 if(numbers[i] + numbers[j] == target && i != j)
