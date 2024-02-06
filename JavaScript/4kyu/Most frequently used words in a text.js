@@ -43,7 +43,7 @@ function topThreeWords(text) {
         words.forEach((e) => {
         if(e === unique[i]);
             counter++;
-        })
+        });
         counters.push(counter);
     }
     

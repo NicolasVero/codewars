@@ -38,20 +38,20 @@ function sumOfDivided(list) {
         		result += list[j]
       		}
     	}
-    	sorted_arr.push([primes[i], result])
+    	sorted_arr.push([primes[i], result]);
   	}
   
   	return sorted_arr;
 		
 		
 	function getPrime(numbers) {
-		var primes = generateAllPrimes(Math.max.apply(null, numbers.map(Math.abs)))
-		var result = []
+		var primes = generateAllPrimes(Math.max.apply(null, numbers.map(Math.abs)));
+		var result = [];
 		
 		numbers.forEach((e) => {
 		for(let i = 0; i < primes.length; i++)            
 			if(e % primes[i] === 0)
-			result.push(primes[i]);
+				result.push(primes[i]);
 		});
 		
 		return Array.from(new Set(result)).sort((a, b) => a - b)
