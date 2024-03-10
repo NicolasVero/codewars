@@ -14,12 +14,12 @@
 
 
 
-function openOrSenior(datas){
+function openOrSenior(datas) {
   
     let results = [];
     datas.forEach(data => {
-      let categorie = (data[0] >= 55 && data[1] > 7) ? "Senior" : "Open";
-      results.push(categorie);
+      	let categorie = (data[0] >= 55 && data[1] > 7) ? "Senior" : "Open";
+      	results.push(categorie);
     });
     
     return results;

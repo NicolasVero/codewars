@@ -20,7 +20,7 @@ var recoverSecret = function(triplets) {
         triplets.forEach((e) => {
             if(e.length > 0)
             firstLetters.push(e[0]);    
-        })
+        });
         
         if(firstLetters.length <= 1 && resultat.length === length - 1) 
             return resultat + firstLetters[0];
@@ -29,8 +29,8 @@ var recoverSecret = function(triplets) {
     
         triplets.forEach((e) => {
             for(let i = 1; i < e.length; i++) 
-            if(firstLetters.includes(e[i])) 
-                firstLetters = firstLetters.filter((letter) => (letter !== e[i]));
+                if(firstLetters.includes(e[i])) 
+                    firstLetters = firstLetters.filter((letter) => (letter !== e[i]));
         });
     
         triplets = triplets.map((e) => {

@@ -13,11 +13,10 @@
 
 function tribonacci(signature, n) {
   
-    for(let i = 0; i < n; i++) {
-      signature.push(signature[i] + signature[i + 1] + signature[i + 2]);
-    }
+    for(let i = 0; i < n; i++) 
+      	signature.push(signature[i] + signature[i + 1] + signature[i + 2]);
     
     signature.length = n;
     
     return signature;
-  }
+}
