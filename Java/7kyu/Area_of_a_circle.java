@@ -13,7 +13,7 @@
 
 
 
-public class Circle {
+public class Area_of_a_circle {
     public static double area(double radius) {
         if (radius <= 0) {
             throw new IllegalArgumentException("Le rayon doit être positif.");
