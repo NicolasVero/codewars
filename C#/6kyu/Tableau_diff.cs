@@ -17,7 +17,7 @@ public class Tableau_diff {
 		int index = 0;
 
 		for (int i = 0; i < a.Length; i++) {
-			if (!b.Contains(a[i])){
+			if (!b.Contains(a[i])) {
 				c[index] = a[i];
 				index++;
 			}
