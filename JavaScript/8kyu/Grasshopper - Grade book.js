@@ -13,7 +13,7 @@
 function getGrade(s1, s2, s3) {
   
     const notes = [...arguments];
-    const average = notes.reduce((a, b) => a + b) / notes.length
+    const average = notes.reduce((a, b) => a + b) / notes.length;
   
     if(average < 60) return 'F';
     if(average < 70) return 'D';
