@@ -13,7 +13,7 @@
 
 
 
-public class OddEvenSort {
+public class Odd_Even_String_Sort {
     public static String sortMyString(String s) {
         String[] result = { "", "" };
 
