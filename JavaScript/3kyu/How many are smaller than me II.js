@@ -29,7 +29,7 @@ const insert = (root, num, result, sum, i) => {
     if(root.val === num) {
         root.dup++;
         result[i] = sum + root.count;
-    } else if (root.val > num) {
+    } else if(root.val > num) {
         root.count++;
         root.left = insert(root.left, num, result, sum, i);
     } else {
