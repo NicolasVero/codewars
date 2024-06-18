@@ -1,7 +1,7 @@
 # Exercices Codewars
 
 Ce dépôt contient une collection de mes solutions aux exercices de Codewars (plateforme en ligne proposant des défis de programmation).  
-Lien vers mon profil : https://www.codewars.com/users/NicolasVero
+Lien vers mon profil Codewars : https://www.codewars.com/users/NicolasVero
 
 ![codewars rank](https://www.codewars.com/users/NicolasVero/badges/large)
 
