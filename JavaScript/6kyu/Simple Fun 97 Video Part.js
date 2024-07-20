@@ -26,9 +26,9 @@ function videoPart(part, total) {
     const numerator = get_video_duration_in_second(part);
     const denominator = get_video_duration_in_second(total);
   
-    const greatestCommonDivisor = pgcd(numerator, denominator);
+    const greatest_common_divisor = pgcd(numerator, denominator);
   
-    return [numerator / greatestCommonDivisor, denominator / greatestCommonDivisor];
+    return [numerator / greatest_common_divisor, denominator / greatest_common_divisor];
     
     
     function pgcd(a, b) {
