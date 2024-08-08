@@ -19,7 +19,7 @@ public class The_Office_II_Boredom_Score {
 
         int totalBoredom = 0;
 
-        for (Person person : staff) 
+        for(Person person : staff) 
             totalBoredom += departments.getOrDefault(person.department, 0);
 
         if(totalBoredom <= 80) return "kill me now"; 
