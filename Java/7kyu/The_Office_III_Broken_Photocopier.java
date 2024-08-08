@@ -5,7 +5,7 @@
 // Given a string of binary, return the version the photocopier gives you as a string.
 
 
-public class Kata {
+public class The_Office_III_Broken_Photocopier {
     public static String broken(String x) {
         return x.replace('1', '2').replace('0', '1').replace('2', '0');
     }
