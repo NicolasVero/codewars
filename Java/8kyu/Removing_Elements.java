@@ -13,7 +13,7 @@ public class Removing_Elements {
     public static Object[] removeEveryOther(Object[] arr) {
         List<Object> resultList = new ArrayList<>();
 
-        for (int i = 0; i < arr.length; i += 2) {
+        for(int i = 0; i < arr.length; i += 2) {
             resultList.add(arr[i]);
         }
 
