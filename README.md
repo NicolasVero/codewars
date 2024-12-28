@@ -1,11 +1,11 @@
 # Exercices Codewars
 
-Ce dépôt contient une collection de mes solutions aux exercices de Codewars (plateforme en ligne proposant des défis de programmation).  
-Lien vers mon profil Codewars : https://www.codewars.com/users/NicolasVero
+This repository contains a collection of my solutions to Codewars exercises (an online platform offering programming challenges).  
+Link to my Codewars profile: https://www.codewars.com/users/NicolasVero
 
 ![codewars rank](https://www.codewars.com/users/NicolasVero/badges/large)
 
-## Structure du dépôt
+## Repository Structure
 
-Chaque exercice est stocké dans un répertoire donnant sa difficulté (8kyu - 1kyu : du plus simple au plus complexe).  
-Ces derniers sont également stockés dans un répertoire regroupant tous les exercices par langage.
+Each exercise is stored in a directory labeled with its difficulty (8kyu - 1kyu: from easiest to most difficult).  
+These are also organized in a directory grouping all exercises by language.
