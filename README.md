@@ -7,5 +7,5 @@ My Codewars profile: https://www.codewars.com/users/NicolasVero
 
 ## Repository Structure
 
-Each exercise is stored in a directory labeled with its difficulty (8kyu - 1kyu: from easiest to most difficult).  
+Each exercise is stored in a directory labeled with its difficulty (8kyu - 1kyu: from easiest to most difficult)! 
 These are also organized in a directory grouping all exercises by language.
