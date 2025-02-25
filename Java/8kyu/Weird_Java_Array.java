@@ -18,7 +18,7 @@
 
 import java.util.*;
 
-class Codewarrior {
+class Weird_Java_Array {
     public static List<Integer>[] arrayOfLists = new List[] {
         Arrays.asList(1, 2, 3),
         Arrays.asList(4, 5, 6),
