@@ -1,6 +1,6 @@
 # Exercices Codewars
 
-This repository contains a collection of my solutions to Codewars exercises (an online platform offering programming challenges).  
+This repository contains a collection of my solutions to Codewars exercises (an online platform offering programming challenges)!  
 My Codewars profile: https://www.codewars.com/users/NicolasVero
 
 ![codewars rank](https://www.codewars.com/users/NicolasVero/badges/large)
