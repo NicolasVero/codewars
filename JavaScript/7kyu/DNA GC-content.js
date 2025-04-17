@@ -11,7 +11,7 @@
 
 function gcContent(dna) {
     if (!dna) {
-      return 0;
+        return 0;
     }
   
     const gcCount = [...dna].filter(base => base === 'G' || base === 'C').length;
