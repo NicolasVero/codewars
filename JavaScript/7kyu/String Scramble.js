@@ -27,4 +27,4 @@ function scramble(str, arr) {
     }
     
     return newArr.join(''); 
-};
+}
